@@ -1,0 +1,238 @@
+/*-----------------------------
+        Base Custom Css.
+------------------------------*/
+
+/* -------------------------
+        Import url
+-------------------------- */
+/* roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+/* --------------------------
+        Root css
+-------------------------- */
+:root {
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #222;
+    --gray-color: gray;
+    --border-color: #ededed;
+    --primary-color: #40A944;
+    --rating-color: #FEB954;
+    --facebook-color: #3B5999;
+    --youtube-color: #ff0000;
+    --twitter-color: #1DA1F2;
+    --pinterest-color: #CB2028;
+    --google-plus-color: #dc5043;
+    --bgc-count: #f8796c;
+    --shadow-primary: 0px 0px 5.76px 0.24px rgba(0, 0, 0, 0.1); 
+    --font-primary: 'Roboto', sans-serif;
+    --font-info: "Playfair Display", serif;
+}
+
+/* ------------------------
+        Reset html
+------------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-primary);
+    color: var(--text-color);
+    font-size: 1.4rem;
+}
+
+/* ------------------------
+        Custom 
+------------------------- */
+@media (min-width: 992px) {
+    .col-lgz-2 {
+        -ms-flex: 0 0 20%;
+        flex: 0 0 20%;
+        max-width: 20%;
+        position: relative;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+a, button, img, input, span {
+    transition: all 0.3s ease 0s;
+}
+
+input,select,button,button:focus,
+*:focus {
+    outline: none!important;
+}
+
+.mt-70 {
+    margin-top: 7rem;
+}
+
+.mb-70 {
+    margin-bottom: 7rem;
+}
+
+.mb-65 {
+    margin-bottom: 6.5rem;
+}
+
+.mt-65 {
+    margin-top: 6.5rem;
+}
+
+.my-65 {
+    margin: 6.5rem 0;
+}
+
+.mt-35 {
+    margin-top: 3.5rem;
+}
+
+.mb-35 {
+    margin-bottom: 3.5rem;
+}
+
+.my-35 {
+    margin: 3.5rem 3.5rem;
+}
+
+.mb-10 {
+    margin-bottom: 1rem;
+}
+
+.dividerj {
+    width: 100%;
+    height: 1px;
+    background-color: var(--border-color);
+}
+
+.bt {
+    cursor: pointer;
+    outline: none;
+    border: 0;
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    display: inline-block;
+    transition: .4s;
+    background-size: 200%;
+    background-color: transparent;
+}
+
+.bt--primary {
+    color: var(--white-color);
+    background-image: linear-gradient(to right, #40A944, #72da75, #40A944);
+}
+
+.bt--circle {
+    border-radius: 1.5rem;
+}
+
+.bt--primary:hover {
+    background-position: right;
+}
+
+.btn-outline-body {
+    color: #696969;
+    border-color: #696969;
+    background-color: transparent;
+}
+
+.btn-circle {
+    border-radius: 50%;
+    color: inherit;
+}
+
+.btn-icon {
+    text-align: center;
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+}
+
+.btn-hover-primary:hover {
+    transition: unset;
+    border-color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.btn--primary {
+    transition: unset;
+    border-color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.btn--primary > span {
+    transition: unset;
+}
+
+.btn-hover-dark:hover {
+    outline: none;
+    color: var(--white-color);
+    background-color: var(--text-color);
+    border-color: var(--text-color);
+    transition: .5s;
+}
+
+.btn-non-circle {
+    border-radius: 3rem;
+}
+
+.btn-facebook {
+    background-color: #3c5b9b;
+}
+
+.btn-youtube {
+    background-color: #ff0000;
+}
+
+.btn-google-plus {
+    background-color: #dc5043;
+}
+
+.btn-instagram {
+    background-color: #f06c34;
+}
+
+.btn-light {
+    border-color: #f8f9fa;
+    background-color: #f8f9fa;
+    color: var(--text-color);
+}
+
+input:not([type="checkbox"]):not([type="radio"]){
+    font-size: 1.6rem;
+    font-weight: 400;
+    display: block;
+    width: 100%;
+    padding: 1rem 0;
+    color: var(--text-color);
+    border: .2rem solid transparent;
+    border-bottom-color: var(--border-color);
+    background-color: transparent;
+}
+
+
+.fg-text-primary {
+    color: var(--primary-color)!important;
+}
+
+.fg-btn-primary {
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}

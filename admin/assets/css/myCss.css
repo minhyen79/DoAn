@@ -1,0 +1,760 @@
+/*-----------------------------------------
+	Mycss by jan Nguyễn.
+				Index.
+	1, login here.
+------------------------------------------*/
+/*1, login here.*/
+.account-box {
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 1px 5px -1px rgba(51,62,73,.14), 0 4px 10px 0 rgba(51,62,73,.08);
+}
+
+.account a.main-logo {
+    width: 16rem;
+    height: 5rem;
+    display: block;
+    margin: 2.5rem auto;
+    
+}
+
+.account a.main-logo > img {
+    max-width: 100%;
+    height: auto;
+}
+
+.account-content {
+    margin: 1.7rem 0 3.5rem;
+    padding: 4rem 3rem;
+    box-shadow: var(--shadow-primary);
+}
+
+.account-title {
+    text-align: center;
+}
+
+.account-title > h4 {
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 0px 0 2rem;
+}
+
+.account-title .account-desc {
+    margin: 0 0 2rem;
+    font-weight: 300;
+}
+
+.account-title a {
+	width: 10rem;
+	height: 10rem;
+	display: block;
+	margin: 0 auto 3.5rem;
+}
+
+.account-acount:hover {
+    border-color: var(--primary-color);
+    background-color: var(--border-color);
+}
+
+.account-acount {
+    width: 100%;
+    height: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    border: .1rem solid #b3b3b3;
+    border-radius: 1rem;
+    margin: 0 auto 2rem;
+    transition: .3s;
+}
+
+.account-acount > a {
+    font-weight: 500;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+}
+
+.account-acount.google > a {
+    padding-left: 2rem;
+}
+
+.account-acount.google > a::before {
+    background: url('../images/icons/google.svg') no-repeat;
+    content: "";
+    position: absolute;
+    width: 1.8rem;
+    height: 1.8rem;
+    top: 45%;
+    transform: translateY(-50%);
+    left: 6.2rem;
+    
+}
+
+.account-acount.google.account-register > a::before {
+    left: 7rem;
+}
+
+.account-acount.facebook > a > svg {
+    margin: 0 .5rem .3rem 0;
+}
+
+.account-note {
+    padding: 0 1rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+.account-or {
+    border-bottom: .1rem solid var(--border-color);
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.account-or > span {
+    background-color: var(--white);
+    color: var(--text-color);
+    padding: 0 1rem;
+    display: inline-block;
+    position: relative;
+    top: 1rem;
+}
+
+.account-tab {
+    margin-bottom: 2rem;
+}
+
+.account-form {
+	position: relative;
+}
+
+.account-form label {
+    font-weight: bold;
+}
+
+.error-email,
+.error-passw {
+	display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.account-form-inp {
+	position: relative;
+}
+
+.account-form input[type = "text"]:hover,
+.account-form input[type = "email"]:hover,
+.account-form input[type = "password"]:hover {
+    border-color: var(--primary-color)!important;
+}
+
+.account-form input[type = "text"],
+.account-form input[type = "email"],
+.account-form input[type = "password"] {
+    width: 100%!important;
+    border: .1rem solid #b3b3b3!important;
+    background: none!important;
+    height: 4.2rem!important;
+    padding: 0 1.2rem!important;
+    border-radius: .5rem!important;
+    font-size: 1.3rem!important;
+}
+
+.account-form.button {
+    text-align: center;
+}
+
+.account-form.button > button:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.account-form.button > button {
+    width: 100%;
+    height: 4rem;
+    border-radius: 1rem;
+    font-size: 1.4rem;  
+    font-weight: 500;
+}
+
+.account-note.noPass a {
+    color: inherit;
+    opacity: .9;
+    text-decoration: underline;
+}
+
+.account-t-register {
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+.account-t-register > p {
+    margin: 0;
+}
+
+.account-t-register a {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.account-form input[type = "text"].err,
+.account-form input[type = "email"].err,
+.account-form input[type = "password"].err {
+    background-color: #fdebee!important;
+    border-color: #f33a58!important;
+}
+
+.account-form input[type = "text"].err:hover,
+.account-form input[type = "email"].err:hover,
+.account-form input[type = "password"].err:hover {
+    background-color: var(--white-color)!important;
+}
+
+.noti-register,
+.noti-login {
+    /*display: none;*/
+    position: fixed;
+    top: 50%;
+    right: 3rem;
+    transform: translateY(-50%);
+    width: 20rem;
+    height: 4rem;
+    line-height: 4rem;
+    border-radius: 3rem;
+    text-align: center;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.noti-login {
+    display: none;
+    background-color: var(--bgc-count);
+}
+
+.label-name, 
+.label-email, 
+.label-phone, 
+.label-pass, 
+.label-address, 
+.label-textarea {
+	color: #f33a58;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    padding: .4rem 0 0;
+}
+
+.error-email-w4,
+.error-passw-w4  {
+    width: 4rem;
+    height: 4.2rem;
+    line-height: 4rem;
+    padding: 0;
+    text-align: center;
+}
+
+#err-email {
+    display: none;
+}
+
+.error-email-animate {
+    pointer-events: none;
+    -webkit-animation: shakeX .35s linear 1;
+    animation: shakeX .35s linear 1;
+    color: #f33a58;
+}
+
+.Passwordsgv-ndh7 {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+.error-passw > i {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+}
+/*./1, login here.*/
+
+
+
+/*21, account here.*/
+.top-account-z {
+    position: relative;
+}
+
+.top-account-z > p {
+    position: absolute;
+    margin: 0;
+    top: 50%; 
+    transform: translateY(-50%); 
+    left: 1rem; 
+    font-size: 1.6rem;
+}
+
+.top-account-z > p > a {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    padding: 1rem;
+    border: .1rem solid transparent;
+}
+
+.top-account-z > p > a:hover {
+    border-color: var(--primary-color);
+}
+
+.account-box {
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 1px 5px -1px rgba(51,62,73,.14), 0 4px 10px 0 rgba(51,62,73,.08);
+}
+
+.account a.main-logo {
+    width: 16rem;
+    height: 5rem;
+    display: block;
+    margin: 2.5rem auto;
+    
+}
+
+.account a.main-logo > img {
+    max-width: 100%;
+    height: auto;
+}
+
+.account-content {
+    margin: 1.7rem 0 0;
+    padding: 4rem 3rem;
+    box-shadow: var(--shadow-primary);
+}
+
+.account-title {
+    text-align: center;
+}
+
+.account-title > h4 {
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 0px 0 2rem;
+}
+
+.account-title .account-desc {
+    margin: 0 0 2rem;
+    font-weight: 300;
+}
+
+.account-title a {
+    width: 10rem;
+    height: 10rem;
+    display: block;
+    margin: 0 auto 3.5rem;
+}
+
+.account-acount:hover {
+    border-color: var(--primary-color);
+    background-color: var(--border-color);
+}
+
+.account-acount {
+    width: 100%;
+    height: 4rem;
+    line-height: 4rem;
+    text-align: center;
+    border: .1rem solid #b3b3b3;
+    border-radius: 1rem;
+    margin: 0 auto 2rem;
+    transition: .3s;
+}
+
+.account-acount > a {
+    font-weight: 500;
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+}
+
+.account-acount.google > a {
+    padding-left: 2rem;
+}
+
+.account-acount.google > a::before {
+    background: url('../images/icons/google.svg') no-repeat;
+    content: "";
+    position: absolute;
+    width: 1.8rem;
+    height: 1.8rem;
+    top: 45%;
+    transform: translateY(-50%);
+    left: 6.2rem;
+    
+}
+
+.account-acount.google.account-register > a::before {
+    left: 7rem;
+}
+
+.account-acount.facebook > a > svg {
+    margin: 0 .5rem .3rem 0;
+}
+
+.account-note {
+    padding: 0 1rem;
+    font-weight: 300;
+    text-align: center;
+}
+
+.account-or {
+    border-bottom: .1rem solid var(--border-color);
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.account-or > span {
+    background-color: var(--white);
+    color: var(--text-color);
+    padding: 0 1rem;
+    display: inline-block;
+    position: relative;
+    top: 1rem;
+}
+
+.account-tab {
+    margin-bottom: 2rem;
+}
+
+.account-form {
+    position: relative;
+}
+
+.account-form label {
+    font-weight: bold;
+}
+
+.error-email,
+.error-passw,
+.error-repassw,
+.error-old-passw {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/*.error-email {
+    top: 1.2rem;
+}*/
+
+.account-form-inp {
+    position: relative;
+}
+
+.account-form input[type = "text"]:hover,
+.account-form input[type = "number"]:hover,
+.account-form input[type = "email"]:hover,
+.account-form input[type = "password"]:hover,
+.account-form textarea:hover {
+    border-color: var(--primary-color)!important;
+}
+
+.account-form input[type = "text"],
+.account-form input[type = "number"],
+.account-form input[type = "email"],
+.account-form input[type = "password"],
+.account-form textarea {
+    width: 100%!important;
+    border: .1rem solid #b3b3b3!important;
+    background: none!important;
+    height: 4.2rem!important;
+    padding: 0 1.2rem!important;
+    border-radius: .5rem!important;
+    font-size: 1.3rem!important;
+}
+
+.payl__info .account-form input[type = "text"],
+.payl__info .account-form input[type = "number"],
+.payl__info .account-form input[type = "email"],
+.payl__info .account-form input[type = "password"],
+.payl__info .account-form textarea {
+    font-size: 1.4rem!important;
+}
+
+.account-form textarea {
+    min-height: 20rem;
+    padding-top: 1.5rem!important;
+}
+
+.account-form.button {
+    text-align: center;
+}
+
+.account-form.button > button:hover {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+.account-form.button > button {
+    width: 100%;
+    height: 4rem;
+    border-radius: 1rem;
+    font-size: 1.4rem;  
+    font-weight: 500;
+}
+
+.account-note.noPass a {
+    color: inherit;
+    opacity: .9;
+    text-decoration: underline;
+}
+
+.account-t-register {
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+.account-t-register > p {
+    margin: 0;
+}
+
+.account-t-register a {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.account-form input[type = "text"].err,
+.account-form input[type = "number"].err,
+.account-form input[type = "email"].err,
+.account-form input[type = "password"].err,
+.account-form textarea.err {
+    background-color: #fdebee!important;
+    border-color: #f33a58!important;
+}
+
+.account-form input[type = "text"].err:hover,
+.account-form input[type = "number"].err:hover,
+.account-form input[type = "email"].err:hover,
+.account-form input[type = "password"].err:hover,
+.account-form textarea.err:hover {
+    background-color: var(--white-color)!important;
+}
+
+.label-name, 
+.label-email, 
+.label-phone, 
+.label-pass, 
+.label-address, 
+.label-textarea {
+    color: #f33a58;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    padding: .4rem 0 0;
+}
+
+.payl-form-label {
+    font-size: 1.4rem;
+}
+
+.error-email-w4,
+.error-passw-w4  {
+    width: 4rem;
+    height: 4.2rem;
+    line-height: 4rem;
+    padding: 0;
+    text-align: center;
+}
+
+#err-email,
+#err-name,
+#err-phone,
+#err-address,
+#err-note {
+    display: none;
+}
+
+.error-email-animate {
+    pointer-events: none;
+    -webkit-animation: headShake .35s linear 1;
+    animation: headShake .35s linear 1;
+    color: #f33a58;
+}
+
+.Passwordsgv-ndh7 {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: var(--primary-color);
+}
+
+.error-passw > i,
+.error-old-passw > i,
+.error-repassw > i {
+    font-size: 1.4rem;
+    color: var(--primary-color);
+}
+
+.fast-reg-label {
+    margin: 0 0 2rem;
+    font-size: 1.5rem;
+    font-weight: 500;   
+    cursor: pointer;
+    user-select: none;
+}
+/*noti*/
+.noti-login {
+    display: none;
+    position: fixed;
+    top: 50%;
+    right: 3rem;
+    transform: translateY(-50%);
+    width: 20rem;
+    height: 4rem;
+    line-height: 4rem;
+    border-radius: 3rem;
+    text-align: center;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+.noti-validate {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin-bottom: 3rem;
+}
+
+.noti-validate li::before {
+    display: inline-block;
+    margin-right: .2rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    content: "\f057";
+    font-family: 'fontAwesome';
+    position: relative;
+}
+
+.noti-validate li {
+    text-align: left;
+    font-size: 1.3rem;
+    color: grey;
+}
+
+.noti-validate li.oke::before {
+    content: "\f058";
+}
+
+.register-alert,
+.buyall-alert,
+.Change_err,
+.fast-lookup-error,
+.fast-lookup-success,
+.footer-success {
+    position: fixed;
+    top: 30%;
+    left: 37%;
+    width: 47.8rem;
+    padding: 1.7rem;
+    border-radius: .5rem;
+    text-align: center;
+    z-index: 9999;
+    cursor: pointer;   
+    background-color: white; 
+    box-shadow: var(--shadow-primary);
+    display: none;
+}
+
+.register-alert h2,
+.buyall-alert h2,
+.Change_err h2,
+.fast-lookup-error h2,
+.fast-lookup-success h2,
+.footer-success h2 {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 600;
+    text-transform: none;
+    position: relative;
+}
+
+.register-alert p,
+.buyall-alert p,
+.Change_err p,
+.fast-lookup-error p,
+.fast-lookup-success p,
+.footer-success p {
+    font-size: 1.6rem;
+    text-align: center;
+    font-weight: 300;
+    position: relative;
+    margin: 0;
+    line-height: normal;
+}
+
+.register-alert button,
+.buyall-alert button,
+.Change_err button,
+.fast-lookup-error button,
+.fast-lookup-success button,
+.footer-success button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    box-shadow: none;
+    font-size: 1.7rem;
+    font-weight: 500;
+    border-radius: .5rem;
+    padding: 1rem 3.2rem;
+    margin: 2.6rem .5rem 0 .5rem;
+    cursor: pointer;
+}
+
+.register-alert-animate {
+    -webkit-animation: backInDown .35s linear 1;
+    animation: backInDown .35s linear 1;
+}
+/*21, account here.*/
+
+
+/*Over_lay*/
+.register__overlay.active {
+    opacity: .3;
+    visibility: visible;
+}
+.register__overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    cursor: crosshair;
+    transition: .3s;
+    background: var(--text-color);
+}

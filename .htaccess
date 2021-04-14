@@ -1,0 +1,61 @@
+RewriteEngine On
+
+RewriteRule "^trang-chu$" "index.php"
+
+RewriteRule "^cua-hang$" "index.php?page=product-shop"
+
+RewriteRule "^cua-hang/([a-zA-Z0-9-]+)$" "index.php?page=product-shop&act=$1"
+
+RewriteRule "^cua-hang/trang/([0-9]+)$" "index.php?page=product-shop&pages=$1"
+
+RewriteRule "^cua-hang/([a-zA-Z0-9-]+)/([0-9]+)$" "index.php?page=product-shop&act=$1&id=$2"
+
+RewriteRule "^cua-hang/([a-zA-Z0-9-]+)/([0-9]+)/trang/([0-9]+)$" "index.php?page=product-shop&act=$1&id=$2&pages=$3"
+
+RewriteRule "^cua-hang/([a-zA-Z0-9-]+)/([0-9]+):([0-9]+)/trang/([0-9]+)$" "index.php?page=product-shop&act=$1&a=$2&b=$3&pages=$4"
+
+RewriteRule "^cua-hang/([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)/trang/([0-9]+)$" "index.php?page=product-shop&act=$1&keyw=$2&pages=$3"
+
+RewriteRule "^cua-hang/([a-zA-Z0-9-]+)/([0-9]+)/([a-zA-Z0-9-]+)/trang/([0-9]+)$" "index.php?page=product-shop&act=$1&key_cate=$2&key_inp=$3&pages=$4"
+
+RewriteRule "^bai-viet$" "index.php?page=blog-area"
+
+RewriteRule "^bai-viet/trang/([0-9]+)$" "index.php?page=blog-area&pages=$1"
+
+RewriteRule "^bai-viet/([a-zA-Z0-9-]+)$" "index.php?page=blog-area&act=$1"
+
+RewriteRule "^bai-viet/([a-zA-Z0-9-]+)/([0-9]+)$" "index.php?page=blog-area&act=$1&id=$2"
+
+RewriteRule "^bai-viet/([a-zA-Z0-9-]+)/([a-zA-Z0-9-]+)/trang/([0-9]+)$" "index.php?page=blog-area&act=$1&keyw=$2&pages=$3"
+
+RewriteRule "^bai-viet/([a-zA-Z0-9-]+)/([0-9]+)/trang/([0-9]+)$" "index.php?page=blog-area&act=$1&id=$2&pages=$3"
+
+RewriteRule "^chi-tiet-bai-viet/([0-9]+)$" "index.php?page=blog-detail&id=$1"
+
+RewriteRule "^san-pham-yeu-thich$" "index.php?page=wishlist"
+
+RewriteRule "^chi-tiet-san-pham/([0-9]+)$" "index.php?page=product-detail&id=$1"
+
+RewriteRule "^gio-hang$" "index.php?page=cart"
+
+RewriteRule "^thanh-toan$" "index.php?page=payl"
+
+RewriteRule "^dang-ky$" "index.php?page=register"
+
+RewriteRule "^dang-nhap$" "index.php?page=login"
+
+RewriteRule "^dang-xuat$" "index.php?page=logout"
+
+RewriteRule "^ca-nhan$" "index.php?page=profile"
+
+RewriteRule "^gui-thu$" "index.php?page=sentMailler"
+
+RewriteRule "^ca-nhan/([0-9]+)$" "index.php?page=profile&id=$1"
+
+RewriteRule "^ca-nhan/([a-zA-Z0-9-]+)$" "index.php?page=profile&act=$1"
+
+RewriteRule "^ca-nhan/([a-zA-Z0-9-]+)/([0-9]+)$" "index.php?page=profile&act=$1&id=$2"
+
+RewriteRule "^lien-he$" "index.php?page=contact"
+RewriteRule "^chung-toi$" "index.php?page=about"
+
