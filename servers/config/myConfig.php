@@ -6,9 +6,9 @@
         //private $passw = '';
         //protected $pdo = null;
 
-        private $dns = 'mysql:host=localhost;dbname=btsonline_admin';
-        private $user   = 'btsonline_admin';
-        private $passw   = 'btsonline*';
+        private $dns = 'mysql:host=localhost;dbname=web';
+        private $user   = 'root';
+        private $passw   = '';
         protected $pdo  = null;
 
         function __construct(){
