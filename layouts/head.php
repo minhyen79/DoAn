@@ -11,7 +11,7 @@
     <title>APRIL 26 FLOWER</title>
     <!-- Bootstrap 4 min css -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <!-- Animate min css -->f
+    <!-- Animate min css -->
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <!-- fontAwesome 5 Pro-->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
